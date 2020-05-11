@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:portfolio/config/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/tabs/about_tab.dart';
@@ -32,8 +34,19 @@ class _HomePageState extends State<HomePage> {
             )
           ],
         ),
-        body: Center(
-          child: tabWidgets.elementAt(_selectedIndex),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: ThemeSwitcher.of(context).isDarkModeOn?AssetImage("assets/bg_dark.jpg"):AssetImage("assets/bg_light.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
+            child: Center(
+              child: tabWidgets.elementAt(_selectedIndex),
+            ),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
@@ -46,7 +59,7 @@ class _HomePageState extends State<HomePage> {
               title: Text('Experience'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.mobile_screen_share),
+              icon: Icon(Icons.apps),
               title: Text('Projects'),
             )
           ],

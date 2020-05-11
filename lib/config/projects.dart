@@ -3,22 +3,21 @@ import 'assets.dart';
 
 final List<Project> projects = [
   Project(
-      name: 'Truelancer',
-      image: Assets.truelancer,
-      description:
-      'Truelancer Mobile App is a Freelancing Platform. You can Search Jobs & Hire Freelancers for work.',
-      link:
-      'https://play.google.com/store/apps/details?id=com.truelancer.app'),
+      name: '1RS',
+      image: Assets.rs,
+      description: 'First rieltor system',
+      link: 'https://1rs.su'
+  ),
   Project(
-      name: 'Messio',
-      image: Assets.messio,
-      description:
-      'An Open-Source Messaging App built using Flutter and Firebase. Part of the series \'60 Days of Flutter',
-      link: 'https://github.com/adityadroid/messio'),
+      name: 'SPN24',
+      image: Assets.spn24,
+      description: 'Service sales of new buildings',
+      link: 'https://spn24.ru'
+  ),
   Project(
-      name: 'Savaari',
-      image: Assets.savaari_consumer,
-      description:
-      'Savaari is the leading player in Outstation Cabs, Hourly Rental Cabs, Airport Pickups and Airport Drop Taxis. ',
-      link: 'https://play.google.com/store/apps/details?id=com.savaari.app'),
+      name: 'Balance-Platform',
+      image: Assets.bp,
+      description: 'BPM model in banks(Absolut, Zenit, Rosgosstrah)',
+      link: 'balance-pl.ru'
+  ),
 ];

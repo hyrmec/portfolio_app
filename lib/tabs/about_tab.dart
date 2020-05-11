@@ -30,7 +30,7 @@ class AboutTab extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                'Python. Golang. Music.\nLikes Traveling.',
+                'Python-Golang developer',
                 style: Theme.of(context).textTheme.caption,
                 textScaleFactor: 2,
                 textAlign: TextAlign.center,
